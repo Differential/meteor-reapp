@@ -1,3 +1,4 @@
+/*
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Theme from 'reapp-ui/helpers/Theme';
@@ -21,3 +22,4 @@ Meteor.startup(function() {
     document.getElementById('app')
   )
 })
+*/

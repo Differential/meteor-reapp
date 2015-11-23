@@ -23,7 +23,7 @@ import Twitter from 'components/kitchen/Twitter';
 import TweetView from 'components/kitchen/twitter/TweetView';
 import createBrowserHistory from 'history/lib/createBrowserHistory'
 
-module.exports = (
+const routes = (
   <Router history={createBrowserHistory()}>
     <Route component={App} path="/">
       <Route path="kitchen" component={Kitchen}>
@@ -46,4 +46,11 @@ module.exports = (
       </Route>
     </Route>
   </Router>
-)
+);
+
+Meteor.startup(function() {
+  ReactDOM.render(
+    routes,
+    document.getElementById('app')
+  )
+})
